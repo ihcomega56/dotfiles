@@ -1,0 +1,11 @@
+[user]
+	name = ihcomega56
+	email = ihcomega56@gmail.com
+[gui]
+	encoding = utf8
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	cm = commit
+	cp = cherry-pick
