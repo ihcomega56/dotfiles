@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DOT_DIRECTORY="${HOME}/dotfiles"
+DOT_DIRECTORY="$HOME/dotfiles"
 
 cd ${DOT_DIRECTORY}
 
 for file in `ls -A ${DOT_DIRECTORY} | grep -E "^\.+.*"`; do
-  ln -sfv $file /tmp/linktest/$file
+  ln -sfvn ${DOT_DIRECTORY}/$file $HOME/$file
 done 
