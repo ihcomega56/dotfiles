@@ -213,6 +213,7 @@ SAVEHIST=10000
 setopt share_history
 
 alias g='git'
+alias gst='git status'
 alias ll="ls -l"
 alias nana="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`"
 alias hachi="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
