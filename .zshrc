@@ -212,6 +212,15 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt share_history
 
+# tmux起動
+if [ "$TMUX" = "" ]; then
+      tmux attach;
+
+      if [ $? ]; then
+          tmux;
+      fi
+fi
+
 alias g='git'
 alias gst='git status'
 alias ll="ls -l"
