@@ -11,7 +11,8 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
-
+" 数値を十進数として扱う
+set nrformats=
 
 " 見た目系
 " 行番号を表示
@@ -35,7 +36,6 @@ set wildmode=list:longest
 " 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
-
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
