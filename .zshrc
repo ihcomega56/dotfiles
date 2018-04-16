@@ -1,8 +1,3 @@
-# 履歴を使おう
-# http://qiita.com/takc923/items/cd98838e59e0eb104194
-zle -la history-incremental-pattern-search-backward && bindkey "^r" history-incremental-pattern-search-backward
-zle -la history-incremental-pattern-search-forward  && bindkey "^s" history-incremental-pattern-search-forward
-
 # カレントディレクトリ表示しよう
 autoload colors
 colors
@@ -204,6 +199,11 @@ function _update_vcs_info_msg() {
     RPROMPT="$prompt"
 }
 add-zsh-hook precmd _update_vcs_info_msg
+
+# 履歴を使おう
+# http://qiita.com/takc923/items/cd98838e59e0eb104194
+zle -la history-incremental-pattern-search-backward && bindkey "^r" history-incremental-pattern-search-backward
+zle -la history-incremental-pattern-search-forward  && bindkey "^s" history-incremental-pattern-search-forward
 
 # http://www.absolute-keitarou.net/blog/?p=452#bashzsh
 # 履歴残そう&プロセス共有しよう
