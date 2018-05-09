@@ -224,6 +224,7 @@ fi
 alias g='git'
 alias gst='git status'
 alias ll="ls -l"
+alias doc="cd $HOME/Documents"
 alias nana="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`"
 alias hachi="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
 alias kyu="export JAVA_HOME=`/usr/libexec/java_home -v 9.0`"
