@@ -1,10 +1,8 @@
 <keymap version="1" name="intellij_idea_keymap" parent="Mac OS X 10.5+">
   <action id="SplitHorizontally">
-    <keyboard-shortcut first-keystroke="shift quotedbl" />
-    <keyboard-shortcut first-keystroke="shift underscore" />
+    <keyboard-shortcut first-keystroke="shift ctrl minus" />
   </action>
   <action id="SplitVertically">
-    <keyboard-shortcut first-keystroke="shift dollar" />
-    <keyboard-shortcut first-keystroke="shift #100007c" />
+    <keyboard-shortcut first-keystroke="shift ctrl back_slash" />
   </action>
 </keymap>
