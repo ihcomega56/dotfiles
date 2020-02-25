@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_DIRECTORY="$HOME/dotfiles"
+DOT_DIRECTORY="$HOME/IdeaProjects/dotfiles"
 
 cd ${DOT_DIRECTORY}
 
