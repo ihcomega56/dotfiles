@@ -4,7 +4,8 @@ A_MaxHotkeysPerInterval := 200
 /*
 Changekey:
 Caps Lockに右Ctrl
-Win（物理キーのCmd）に左Ctrl
+WinにAlt
+Altに左Ctrl
 左CtrlにWin
 */
 
@@ -23,39 +24,39 @@ Cmd + Shift + Tab :: Alt + Shift + Tab
 
 /*
 Chromeとかでタブ移動する
-Cmd + Shift + [ :: Ctrl + PgUp
-Cmd + Shift + ] :: Ctrl + PgDn
+Cmd (Left Ctrl) + Shift + [ :: Ctrl + PgUp
+Cmd (Left Ctrl) + Shift + ] :: Ctrl + PgDn
 */
 <^+sc01A::^PgUp
 <^+sc01B::^PgDn
 
 /*
-vimiumのページ送りと
-chromeの検索がぶつかる問題を回避
-※vimium側にも要設定
-Caps lock + f :: Ctrl + g
-*/
->^f::^c
-
-/*
 範囲選択式のスクショ
-Cmd + Shift + 4 :: Win + Shift + S
+Cmd (Left Ctrl) + Shift + 4 :: Win + Shift + S
 */
 <^+4::#+s
 
 /*
-マウスのスクロールを逆にする
+IMEのトグル
+Cmd (Left Ctrl) + Space :: Win + Space
 */
-WheelUp::WheelDown
-WheelDown::WheelUp
+>^Space::#Space
 
 /*
-Notepadを起動する（動作確認用）
+vimiumのページ送りと
+chromeの検索がぶつかる問題を回避
+※vimium側にも要設定
+Cmd (Left Ctrl) + f :: Ctrl + g
 */
-#n::
-{
-    if WinExist("ahk_class Notepad")
-        WinActivate  ; Activate the window found above
-    else
-        Run "notepad"  ; Open a new Notepad window
-}
+#HotIf WinActive("ahk_exe msedge.exe")
+<^f::^g
+
+/*
+========== かつて使っていたもの ==========
+*/
+
+/*
+マウスのスクロールを逆にする
+WheelUp::WheelDown
+WheelDown::WheelUp
+*/
